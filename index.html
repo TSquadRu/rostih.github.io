@@ -561,7 +561,6 @@
                         <li><a href="#about">О канале</a></li>
                         <li><a href="#services">Услуги</a></li>
                         <li><a href="#social">Соцсети</a></li>
-                        <li><a href="#contact">Сотрудничество</a></li>
                     </ul>
                 </nav>
             </div>
@@ -585,7 +584,7 @@
     <!-- Последние видео -->
     <section id="videos" class="section">
         <div class="container">
-            <h2 class="section-title">Последние видео</h2>
+            <h2 class="section-title">Популярные видео</h2>
             <p style="text-align: center; margin-bottom: 30px; color: #666; font-size: 1.1rem;">Три последних видео с канала</p>
             
             <div class="videos-grid">
@@ -636,7 +635,7 @@
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
-                <a href="https://youtube.com/@MrRostih" target="_blank" class="cta-button">
+                <a href="https://www.youtube.com/@MrRostih/videos" target="_blank" class="cta-button">
                     <i class="fab fa-youtube"></i> Все видео на канале
                 </a>
             </div>
@@ -824,59 +823,6 @@
         </div>
     </section>
 
-    <!-- Контакты -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Сотрудничество</h2>
-            <p style="text-align: center; margin-bottom: 40px; color: #666; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                По вопросам сотрудничества, рекламы или создания индивидуального гайда для вашего проекта
-            </p>
-            
-            <div class="contact-form">
-                <div style="text-align: center; margin-bottom: 30px;">
-                    <h3>Основной контакт для сотрудничества:</h3>
-                    <p style="margin-top: 10px; font-size: 1.2rem;">
-                        <a href="https://t.me/nepisi1" target="_blank" style="color: var(--red); text-decoration: none;">
-                            <i class="fab fa-telegram"></i> Telegram: @nepisi1
-                        </a>
-                    </p>
-                </div>
-                
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" id="name" required placeholder="Как к вам обращаться?">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required placeholder="example@mail.com">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Тема обращения</label>
-                        <select id="subject" style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 1rem;">
-                            <option value="">Выберите тему</option>
-                            <option value="collab">Коллаборация</option>
-                            <option value="ad">Реклама</option>
-                            <option value="custom-guide">Индивидуальный гайд</option>
-                            <option value="other">Другое</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Сообщение</label>
-                        <textarea id="message" rows="5" required placeholder="Опишите ваше предложение..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="cta-button" style="width: 100%; border: none; cursor: pointer;">
-                        <i class="fas fa-paper-plane"></i> Отправить предложение
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
     <!-- Подвал -->
     <footer>
         <div class="container">
@@ -895,31 +841,16 @@
                 <a href="#about">О канале</a>
                 <a href="#services">Услуги</a>
                 <a href="#social">Соцсети</a>
-                <a href="#contact">Сотрудничество</a>
             </div>
             
             <div class="copyright">
-                © 2025 MrRostih. Все права защищены. Minecraft является товарным знаком Mojang AB
+                © 2025 MrRostih. Все права защищены.
             </div>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Обработка формы контактов
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const name = document.getElementById('name').value;
-                const subject = document.getElementById('subject').value;
-                
-                if (!subject) {
-                    alert('Пожалуйста, выберите тему обращения!');
-                    return;
-                }
-                
-                alert(`Спасибо, ${name}! Ваше предложение отправлено. Я свяжусь с вами в ближайшее время.`);
-                this.reset();
             });
             
             // Плавная прокрутка
